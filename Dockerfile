@@ -10,10 +10,10 @@ ENV VERSION=${VERSION_ARG} \
 
 ENV JBOSS_USER="jboss-eap-${VERSION}"
 
-ENV JBOSS_FILE="${JBOSS_USER}.0.zip" \
+ENV JBOSS_FILE="${JBOSS_USER}.zip" \
     JBOSS_USER_HOME="/home/${JBOSS_USER}"
 
-ENV JBOSS_URL="https://github.com/daggerok/jboss/releases/download/eap/${JBOSS_FILE}" \
+ENV JBOSS_URL="https://github.com/nickrfer/docker-jboss/releases/download/eap/${JBOSS_FILE}" \
     JBOSS_HOME="${JBOSS_USER_HOME}/${JBOSS_USER}"
 
 RUN apk --no-cache --update add busybox-suid bash wget ca-certificates unzip sudo openssh-client shadow \
