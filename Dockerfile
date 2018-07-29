@@ -1,6 +1,8 @@
+#based on https://hub.docker.com/r/daggerok/jboss/~/dockerfile/
 FROM openjdk:8u171-jdk-alpine
 MAINTAINER Nicolas Ferreira https://github.com/nickrfer
 
+ARG VERSION_ARG="7.1"
 ARG JBOSS_ADMIN_PASSWORD_ARG="Admin.123"
 ARG JBOSS_ADMIN_USER_ARG="admin"
 
